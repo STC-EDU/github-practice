@@ -1,4 +1,9 @@
 public class Sample {
+    
+    int add(int x, int y) {
+        return x + y;
+    }
+
     public static void main(String[] args) {
         int a = 10;
         int b = 0;
