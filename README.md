@@ -12,7 +12,7 @@
 
 ## 2. 追加機能Issueを作成しよう
 
-サンプルプログラムCalc.javaには、加算機能int add(int a, int b)追加するためのIssueを作成してください。以下の項目を含むこと。
+サンプルプログラムCalc.javaに、加算機能int add(int a, int b)と減算機能sub(int a, int b)を追加するためのIssueを作成してください。以下の項目を含むこと。
 - 機能概要
 - 利用者メリット
 - 完了条件
