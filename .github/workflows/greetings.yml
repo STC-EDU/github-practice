@@ -18,15 +18,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/first-interaction@v1
+      - uses: actions/first-interaction@v3
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          
           issue_message: |
-            # Issue Message with Markdown
-
             This is the message that will be displayed!
           pr_message: |
-            # PR Message with Markdown
-
             This is the message that will be displayed!
