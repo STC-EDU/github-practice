@@ -9,10 +9,9 @@ jobs:
       issues: write
       pull-requests: write
     steps:
-    - uses: actions/first-interaction@v3
-      with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
-        issue-message: |
-          はじめてのイシュー投稿、ありがとうございます!
-        pr-message: |
-          プルリクエストを送ってくれてありがとうございます！
+      - uses: actions/first-interaction@v3
+        with:
+          issue_message: |
+            一周回ってイシューする
+          pr_message: |
+            プルプルしていないけどプルリク
