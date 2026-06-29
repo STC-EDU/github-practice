@@ -18,10 +18,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/first-interaction@v3
+      - name: Greet first-time contributors
+        uses: actions/first-interaction@v1
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          issue_message: |
-            This is the message that will be displayed!
           pr_message: |
-            This is the message that will be displayed!
+            こんにちは！プルリクエストを作成していただき、ありがとうございます。
+            このリポジトリへの初めての貢献を歓迎します！
