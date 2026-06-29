@@ -21,10 +21,10 @@ jobs:
       - name: Greet first-time contributors
         uses: actions/first-interaction@v3
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          pr_message: |
-            "こんにちは！プルリクエストを作成していただき、ありがとうございます。
-            このリポジトリへの初めての貢献を歓迎します！"
           issue-message: |
             "こんにちは！プルリクエストを作成していただき、ありがとうございます。
             このリポジトリへの初めての貢献を歓迎します！"
+          pr_message: |
+            "こんにちは！プルリクエストを作成していただき、ありがとうございます。
+            このリポジトリへの初めての貢献を歓迎します！"
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
