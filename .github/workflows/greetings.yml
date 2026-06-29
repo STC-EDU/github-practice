@@ -1,17 +1,30 @@
 name: Greetings
 
-on: [pull_request_target, issues]
+on:
+  pull_request:
+    types:
+      - opened
+  issues:
+    types:
+      - opened
+
+permissions:
+  issues: write
+  pull-requests: write
 
 jobs:
   greeting:
+    name: Greet First-Time Contributors
     runs-on: ubuntu-latest
-    permissions:
-      issues: write
-      pull-requests: write
+
     steps:
       - uses: actions/first-interaction@v3
         with:
           issue_message: |
-            一周回ってイシューする
+            # Issue Message with Markdown
+
+            This is the message that will be displayed!
           pr_message: |
-            プルプルしていないけどプルリク
+            # PR Message with Markdown
+
+            This is the message that will be displayed!
